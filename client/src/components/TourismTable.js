@@ -13,14 +13,14 @@ export default class TourismTable extends Component
                     <tr>
                         <th>Name</th>
                         <th>Telephone</th>
-                        <th>Regions</th>
+                        <th>Region</th>
                         <th>Location</th>
                         <th> </th>
                     </tr>
                 </thead>
                   
                 <tbody>
-                    {this.props.toursim.map((tourism) => <TourismRow key={tourism.geo} tourism={tourism}/>)}
+                    {this.props.tourism.map((tourism) => <TourismRow key={tourism._id} tourism={tourism}/>)}
                 </tbody>
             </table>      
         )

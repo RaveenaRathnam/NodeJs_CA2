@@ -5,7 +5,7 @@ import axios from "axios"
 import {SERVER_HOST} from "../config/global_constants"
 
 
-export default class DeleteTourism extends Component 
+export default class Delete extends Component 
 {
     constructor(props) 
     {
@@ -19,7 +19,7 @@ export default class DeleteTourism extends Component
     
     componentDidMount() 
     {   
-        axios.delete(`${SERVER_HOST}/tourism/${this.props.match.params.geos}`)
+        axios.delete(`${SERVER_HOST}/tourism/${this.props.match.params.id}`)
         .then(res => 
         {
             if(res.data)

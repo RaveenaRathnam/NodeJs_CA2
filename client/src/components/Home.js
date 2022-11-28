@@ -1,6 +1,5 @@
 import React, {Component} from "react"
-import axios from "axios"
-import TourismTable from "./TourismTable"
+
 
 export default class Home extends Component 
 {

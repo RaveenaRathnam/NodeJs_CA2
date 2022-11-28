@@ -8,9 +8,9 @@ let TourismSchema = new mongoose.Schema(
       
         name: {type: String},
         telephone: {type: String,required:true},
-        region:{type: String,enum:counties},
-        location:{type: String,},
-        tags:{type:Array}
+        addressRegion:{type: String,enum:counties},
+        addressLocality:{type: String,}
+      
    },
    {
        collection: `Tourism`

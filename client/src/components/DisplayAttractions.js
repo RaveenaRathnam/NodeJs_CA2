@@ -1,6 +1,6 @@
 import React, {Component} from "react"
 import {Link} from "react-router-dom"
-import axios from 'axios';
+import axios from "axios"
 import TourismTable from "./TourismTable"
 import {SERVER_HOST} from "../config/global_constants"
 
